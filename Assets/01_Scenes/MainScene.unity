@@ -1853,7 +1853,8 @@ MonoBehaviour:
   expText: {fileID: 1011067897}
   goldText1: {fileID: 1954801835}
   character:
-    characterMaxExp: 0
+    characterMaxExp: 12
+  expFillImage: {fileID: 1395812379}
 --- !u!1 &802228799
 GameObject:
   m_ObjectHideFlags: 0

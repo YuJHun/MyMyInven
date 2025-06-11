@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
             gold1: 11,
             name1: "기사",
             level1: 1,
-            exp1: 1,
+            exp1: 7,
             at1: 50,
             df1: 10,
             hp1: 10,
