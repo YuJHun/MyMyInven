@@ -96,4 +96,21 @@ public class Character
             Debug.LogWarning($"{characterName}은(는 장착된 아이템이 없습니다.");
         }
     }
+   
+
+    public void AddExp(int amount)
+    {
+        characterExp += amount;
+        while (characterExp >= characterMaxExp)
+        {
+            characterExp -= characterMaxExp; // 남은 경험치 이월
+            LevelUp();
+        }
+    }
+
+    public void LevelUp()
+    {
+        characterLevel++;
+        Debug.Log($"{characterName} 레벨 업! 현재 레벨: {characterLevel}");
+    }
 }

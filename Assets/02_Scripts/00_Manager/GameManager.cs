@@ -60,14 +60,14 @@ public class GameManager : MonoBehaviour
             gold1: 11,
             name1: "기사",
             level1: 1,
-            exp1: 7,
+            exp1: 0,
             at1: 50,
             df1: 10,
             hp1: 10,
             cr1: 10,
             initialInventory: initialItems //  아이템 리스트 전달
         );
-       
+        playerCharacter.AddExp(18);
         // 테스트용 아이템 아이콘 불러오기
         Sprite bowIcon = Resources.Load<Sprite>("04_Sprites/Icons/Bow");
 
