@@ -8,6 +8,7 @@ using UnityEngine.TextCore.Text;
 public class Character
 {
     public string characterName { get; private set; }
+    public string characterJob { get; private set; }
     public int characterLevel { get; private set; }
     public int characterExp { get; private set; }
     public int characterMaxExp;
@@ -27,9 +28,10 @@ public class Character
     public int TotalHp => characterBaseHp + (EquippedItem?.ItemHP ?? 0);
     public int TotalCr => characterBaseCr + (EquippedItem?.ItemCritical ?? 0);
 
-    public Character(int gold1, string name1, int level1,int exp1,int at1 ,int df1,int hp1,int cr1, List<Item> initialInventory = null)
+    public Character(int gold1,string job1, string name1, int level1,int exp1,int at1 ,int df1,int hp1,int cr1, List<Item> initialInventory = null)
     {
         characterGold = gold1;
+        characterJob = job1;
         characterName = name1;
         characterLevel = level1;
         characterExp = exp1;

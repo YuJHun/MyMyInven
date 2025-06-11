@@ -58,7 +58,8 @@ public class GameManager : MonoBehaviour
         //  아이템 포함해서 캐릭터 생성
         playerCharacter = new Character(
             gold1: 11,
-            name1: "기사",
+            job1: "코딩기사",
+            name1: "유스파르타",
             level1: 1,
             exp1: 0,
             at1: 50,

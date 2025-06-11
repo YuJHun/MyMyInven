@@ -7,8 +7,9 @@ using UnityEngine.UI;
 
 public class UIMainMenu : MonoBehaviour
 {
-    
+
     [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private TextMeshProUGUI jobText;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI expText;
     [SerializeField] private TextMeshProUGUI goldText1;
@@ -33,6 +34,7 @@ public class UIMainMenu : MonoBehaviour
             displayExp -= maxExp;
         }
 
+        jobText.text = $"{character.characterJob}"; 
         nameText.text = $"{character.characterName}";
         levelText.text = $"{character.characterLevel}";
         expText.text = $"{displayExp+" / "+character.characterMaxExp}";

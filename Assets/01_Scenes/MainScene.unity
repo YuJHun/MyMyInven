@@ -748,7 +748,7 @@ GameObject:
   - component: {fileID: 218662434}
   - component: {fileID: 218662433}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Job
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1849,11 +1849,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 940763274}
+  jobText: {fileID: 218662433}
   levelText: {fileID: 159915081}
   expText: {fileID: 1011067897}
   goldText1: {fileID: 1954801835}
-  character:
-    characterMaxExp: 12
   expFillImage: {fileID: 1395812379}
 --- !u!1 &802228799
 GameObject:
@@ -2820,7 +2819,7 @@ GameObject:
   - component: {fileID: 940763275}
   - component: {fileID: 940763274}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2892,10 +2891,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
+  m_fontSize: 50
   m_fontSizeBase: 70
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -6310,7 +6309,7 @@ GameObject:
   - component: {fileID: 2023791807}
   - component: {fileID: 2023791806}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: LV_Txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
